@@ -24,7 +24,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Welcome = Josht.art</title>
+        <title>Welcome - Josht.art</title>
         <meta
           name="Josh's personal website"
           content="full-stack engineer and muscian /react/ts/solidity /guitar/drums/bass/keys ☽ S2"
