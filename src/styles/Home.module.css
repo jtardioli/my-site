@@ -77,10 +77,10 @@
   }
 
   .audioPlayer {
-    width: 27rem;
+    width: 95%;
   }
 
   .audioPlayer div {
-    max-width: 280px;
+    max-width: 190px;
   }
 }
