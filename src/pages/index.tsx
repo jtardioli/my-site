@@ -28,7 +28,7 @@ const Home: NextPage = () => {
 
           <LinkButton img="/github.svg" link="https://github.com/jtardioli" />
         </div>
-        <audio className={styles.audio} controls autoplay muted>
+        <audio className={styles.audio} controls autoPlay muted>
             <source src="horse.ogg" type="audio/ogg"/>
         </audio>
 
