@@ -35,20 +35,52 @@
 .modal_button:hover {
   cursor: pointer;
   transform: translateY(-6px);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.audio {
+.audioPlayer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 31rem;
+  height: 90px;
+  border-radius: 1.5rem;
+  background: #ffffff50;
+  padding: 1rem 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   position: absolute;
   bottom: 30px;
-  margin: auto
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
+.audioPlayer div p:first-child {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(17, 17, 17, 0.739);
+  margin: 0;
+}
+.audioPlayer div p:nth-child(2) {
+  font-weight: 500;
+  color: rgba(17, 17, 17, 0.873);
+  margin: 0;
+  text-overflow: ellipsis;
+}
 
 @media only screen and (max-width: 600px) {
   .modal {
     padding: 1rem;
+  }
+
+  .audioPlayer {
+    width: 27rem;
+  }
+
+  .audioPlayer div {
+    max-width: 280px;
   }
 }
