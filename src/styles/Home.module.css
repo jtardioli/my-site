@@ -23,6 +23,12 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal_button {
   width: 78%;
   height: 78%;
@@ -30,6 +36,7 @@
   background: #ffffff90;
   padding: 1rem;
   transition: all 150ms ease-in-out;
+  margin: 0;
 }
 
 .modal_button:hover {
