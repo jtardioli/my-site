@@ -28,11 +28,10 @@ const Home: NextPage = () => {
 
           <LinkButton img="/github.svg" link="https://github.com/jtardioli" />
         </div>
-        <div className="ag-leaf-block">
-          <div className="ag-format-container"></div>
+        <audio className={styles.audio} controls autoplay muted>
+            <source src="horse.ogg" type="audio/ogg"/>
+        </audio>
 
-          <div id="js-ag-leaf_box"></div>
-        </div>
       </main>
     </div>
   );
