@@ -10,7 +10,9 @@ const Home: NextPage = () => {
   const [audio, setAudio] = useState<HTMLAudioElement>(null!);
 
   useEffect(() => {
-    setAudio(new Audio("/corcovadorain.mp3"));
+    const music = new Audio("/corcovadorain.mp3");
+    music.loop = true;
+    setAudio(music);
   }, []);
 
   const start = () => {
