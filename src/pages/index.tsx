@@ -4,7 +4,8 @@ import Image from "next/image";
 import LinkButton from "../components/LinkButton";
 import styles from "../styles/Home.module.css";
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
+
 const Home: NextPage = () => {
   const [playing, setPlaying] = useState(false);
   const [audio, setAudio] = useState<HTMLAudioElement>(null!);
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
     setPlaying(true);
     audio.play();
   };
+
   const stop = () => {
     setPlaying(false);
     audio.pause();
@@ -59,7 +61,7 @@ const Home: NextPage = () => {
         />
         <div>
           <p>Now {playing ? "Playing" : "Paused"}</p>
-          <p>Corcovado (Mono) / Stan Getz & Joan Gilberto</p>
+          <p>Corcovado (Mono) / Stan Getz & João Gilberto</p>
         </div>
         {!playing ? (
           <AiFillPlayCircle
