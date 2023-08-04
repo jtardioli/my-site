@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         <div className={styles.modal}>
           <LinkButton
             img="/gmail.svg"
-            link="mailto:dxc6f6f2c4@privaterelay.appleid.com?subject=Hello Josh!"
+            link="mailto:joshua.tardioli@gmail.com?subject=Hello Josh!"
           />
           <LinkButton
             img="/medium.svg"
