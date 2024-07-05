@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #201c21;
+  padding: 2rem 0px;
+}
+
+.main h1 {
+  color: #f5f5f5;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.main_inner {
+  min-width: 500px;
+}
+
+.article_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.article_entry a {
+  color: #ce55d9;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  padding: 0.5rem 0;
+  font-weight: 700;
+}
+.article_entry p {
+  color: #b3b2b2;
+  line-height: 5px;
+}
