@@ -56,14 +56,13 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <div className={styles.modal}>
+          <LinkButton img="/github.svg" link="https://github.com/jtardioli" />
           <LinkButton
             img="/gmail.svg"
             link="mailto:joshua.tardioli@gmail.com?subject=Hello Josh!"
           />
-          <LinkButton img="/blog.svg" link="/blog" />
+          {/* <LinkButton img="/blog.svg" link="/blog" /> */}
           <LinkButton img="/twitter.svg" link="https://twitter.com/0xjosht" />
-
-          <LinkButton img="/github.svg" link="https://github.com/jtardioli" />
         </div>
       </main>
       <div className={styles.audioPlayer}>
