@@ -1,26 +1,36 @@
 .main {
-  background-image: url("https://media1.giphy.com/media/Ruqs7aaZ4J19m/giphy.gif?cid=ecf05e47fhg4ecl7sqnrvz3e5y7vfc5cztd1g71vj5q06oag&rid=giphy.gif&ct=g");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("https://media1.giphy.com/media/Ruqs7aaZ4J19m/giphy.gif?cid=ecf05e47fhg4ecl7sqnrvz3e5y7vfc5cztd1g71vj5q06oag&rid=giphy.gif&ct=g");
   background-size: cover;
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: -1;
   padding: 0 5%;
 }
 
+.name {
+  margin-top: -8rem;
+  color: white;
+  font-family: "Dancing Script", "Brush Script MT", cursive;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
+
 .modal {
-  margin-top: -100px;
-  width: 40rem;
-  height: 25vh;
-  border-radius: 1.5rem;
-  background: #ffffff50;
+  margin-top: -20px;
+  max-width: 35rem;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .link {
@@ -30,11 +40,11 @@
 }
 
 .modal_button {
-  width: 78%;
-  height: 78%;
+  width: 65%;
+  height: 65%;
   border-radius: 1.5rem;
-  background: #ffffff90;
-  padding: 1rem;
+  background: #ffffff22;
+  padding: 0.75rem;
   transition: all 150ms ease-in-out;
   margin: 0;
 }
@@ -42,7 +52,8 @@
 .modal_button:hover {
   cursor: pointer;
   transform: translateY(-6px);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
@@ -54,7 +65,7 @@
   width: 31rem;
   height: 90px;
   border-radius: 1.5rem;
-  background: #ffffff50;
+  background: #ffffff5e;
   padding: 1rem 1rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   position: absolute;
@@ -79,6 +90,12 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .name {
+    font-size: 3rem;
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+  }
+
   .modal {
     padding: 1rem;
   }

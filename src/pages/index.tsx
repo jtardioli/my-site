@@ -45,24 +45,38 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Welcome - Josht.art</title>
-        <meta
-          name="Josh's personal website"
-          content="full-stack engineer and musician /react/ts/solidity /guitar/drums/bass/keys ☽ S2"
-        />
+        <title>Josh Dimonte | Music</title>
+        <meta name="description" content="Josh Dimonte - musician, songwriter, and artist. Thanks for listening." />
+        <meta property="og:title" content="Josh Dimonte | Music" />
+        <meta property="og:description" content="Josh Dimonte - musician, songwriter, and artist. Thanks for listening." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Josh Dimonte | Music" />
+        <meta name="twitter:description" content="Josh Dimonte - musician, songwriter, and artist. Thanks for listening." />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
       </Head>
 
       <main className={styles.main}>
+        <h1 className={styles.name}>Josh Dimonte</h1>
         <div className={styles.modal}>
-          <LinkButton img="/github.svg" link="https://github.com/jtardioli" />
+          {/* <LinkButton img="/github.svg" link="https://github.com/jtardioli" /> */}
+
+          <LinkButton
+            img="/instagram.svg"
+            link="https://www.instagram.com/joshdimonte/"
+          />
+          <LinkButton
+            img="/youtube.svg"
+            link="https://www.youtube.com/@joshdimonte"
+          />
           <LinkButton
             img="/gmail.svg"
-            link="mailto:joshua.tardioli@gmail.com?subject=Hello Josh!"
+            link="mailto:joshdimontemusic@gmail.com?subject=Hello Josh!"
           />
           {/* <LinkButton img="/blog.svg" link="/blog" /> */}
-          <LinkButton img="/twitter.svg" link="https://twitter.com/0xjosht" />
+          {/* <LinkButton img="/twitter.svg" link="https://twitter.com/0xjosht" /> */}
         </div>
       </main>
       <div className={styles.audioPlayer}>
